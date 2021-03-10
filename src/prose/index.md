@@ -1,6 +1,7 @@
 ---
 title: Home
+template: page.hbt
 ---
-testing testing 1 2 3
+# Realtime Expressive Programming Lab (REPL)
 
-# info
+The REPL@WPI investigates new environments, languages, and libraries for audiovisual performance, creative exploration, and education.
