@@ -1,0 +1,256 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>REPL</title>
+
+	<meta name="keywords" content="repl, programming, wpi, imgd, cs">
+	<meta name="author" content="charlie roberts">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A list of languages, libraries, and programming environments created by the REPL lab at WPI">
+
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">  -->
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+
+	<style>
+    /* adapted from minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+    html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}
+    h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+    ul{list-style:none}
+    button,input,select{margin:0}
+    html{box-sizing:border-box}
+    *,*::before,*::after{box-sizing:inherit}
+    img,video{height:auto;max-width:100%}
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap'); */
+    /* custom css, with inspiration / some code from nnnnnnnn.co */
+    body {
+      background-color:#222; 
+      max-width:30em;
+      color:#ccc;
+      font-family: 'Zilla Slab', monospace; 
+      font-size: 1em;
+      margin:4em 4em 1em 4em;
+    }
+
+    code {
+      font-size: 1.6em; 
+      color:#999;
+    }
+
+    h1 {
+      font-weight:bold; 
+      font-size: 1em; 
+      margin-top:2em;
+      margin-bottom:.25em;
+      color:white;
+    }
+
+    h2 {
+      font-size:1em; 
+      color:white
+    }
+
+    h3 { 
+      margin-top:2em;
+      font-size: 1em;
+    }
+
+    hr {
+      margin-bottom:2em; 
+      clear: both; 
+      visibility: hidden;
+    }
+
+	  a {
+      color:#ccc;
+      text-decoration:underline;
+    }
+	  a:hover {color:#fff;}
+
+    header ul li {
+      display:inline-block;
+    }
+
+    ul p { margin-top:1em }
+
+    summary h3 { display: inline }
+
+    summary { margin-bottom:1em }
+
+    details { margin-bottom:1em }
+
+    details img { margin:2em 0 }
+
+    .bullet { 
+      list-style:disc;
+      padding:1.25em
+    }
+
+	</style>
+</head>
+
+<body>
+  <header>
+    <h1>Realtime Expressive Programming Lab</h1>
+    <ul>
+      <li><a href="./index.html">news</a></li>
+      <li><a href="./tools.html">tools</a></li>
+      <li><a href="./publications.html">publications</a></li>
+      <li><a href="./people.html">people</a></li>
+    </ul>
+  </header>
+  <hr />
+
+  <p>
+    Our research artifacts are categorized here as either languages, libraries,
+    or programming environments, but some span all three categories.
+  </p>
+
+  <hr />
+  <h2>Programming Environments (click to expand)</h2>
+  <hr />
+
+  <ul>
+    <li>
+      <details>
+        <summary>
+          Barbara, an environment for authoring graphics programming langauges, by <a href="https://bandaloo.fun">Kit
+            Zellerbach</a><br>
+        </summary>
+        <a href="http://github.com/kitzeller/barbara">Code</a> /
+        <a href="https://www.barbara.graphics">Playground</a>
+        <a href="https://youtu.be/wqw9u34lNgE?t=1317">Presentation</a><br>
+        <p>
+          Barbara is a system for creating bespoke programming languages generating geometric patterns.
+          Inspired by algorithmic quilting patterns, Barbara helps users construct languages
+          that mimic real-world quilting procedures which can be used for both live coding
+          performance or digital quilt recreation. Users create languages and patterns in
+          Barbara’s online coding environment with the Parsing Expression Grammar language
+          formalism; the resulting patterns can be freely shared, remixed, and combined
+          into new quilts.
+        </p>
+        <img src="images/barbara.png" alt="The Barbara code editor and the resulting pattern of triangles" />
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>
+          gibber, an live coding environment for audiovisual performance, by <a href="https://charlie-roberts.com">Charlie Roberts</a><br>
+        </summary>
+        <a href="https://github.com/gibber-cc/gibber">Code</a> /
+        <a href="https://gibber.cc/alpha/playground">Playground</a>
+        <p>
+          gibber is a browser-based live coding environment, featuring custom music and graphics libraries, 
+          features for collaborative networked performance, and a research focus on 
+          <a href="https://charlieroberts.github.io/annotationsAndVisualizations/">annotating source code with
+          dynamic visualizations</a> provide meaningful visual feedback to on algorithmic processes to performers
+          and audiences. 
+        </p>
+        <img src="images/gibber_small.png" alt="The gibber editor with running annotations and visualizations" />
+      </details>
+    </li>
+  </ul>
+
+  <hr />
+  <h2>Languages (click to expand)</h2>
+  <hr />
+
+  <ul>
+    <li>
+      <details>
+        <summary>
+          Tinsl, a shader meta-programming language by language by <a href="https://bandaloo.fun">Cole Granof</a><br>
+        </summary>
+        <a href="https://github.com/bandaloo/tinsl">Code</a> /
+        <a href="https://bandaloo.fun/playground">Playground</a> /
+        <a href="https://digital.wpi.edu/concern/etds/rx913s769?locale=en">Thesis</a><br>
+        <p>
+          (Tinsl is not a shading language) is a shader meta-programming language for compiling GLSL shaders.
+          The language enables developers to easily create complex multi-pass rendering pipelines
+          without needing to write any WebGL code, including GPGPU programming.
+        </p>
+        <img src="images/tinsl.jpg" alt="The Tinsl environment running code processing a live webcam feed." />
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>
+          PHAD, a language / live coding environment for musical performance and composition, by
+          <a href="https://github.com/mariana0pachon">Mariana Pachon-Puentes</a><br>
+        </summary>
+        <a href="https://github.com/MQP-Live-Coding-Language-Design/mqp">Code</a> /
+        <a href="https://mqp-live-coding-language-design.github.io/mqp/#/tutorial">Playground</a> /
+        <a href="https://digital.wpi.edu/concern/student_works/kh04ds310?locale=en">Capstone Documentation</a><br>
+        <p>
+          Phad is a live coding environment built for web browsers. Phad strives for minimal syntax, with the
+          purpose of achieving both readability and simplicity targeted to users with no programming or music
+          experience. It is built around the modification of notes and instruments, and the combination of both.
+        </p>
+        <img src="images/phad.png" alt="The PHAD code editor showing code for a chiptune composition." />
+      </details>
+    </li>
+  </ul>
+
+  <hr />
+  <h2>Libraries (click to expand)</h2>
+  <hr />
+
+  <ul>
+    <li>
+      <details>
+        <summary>
+          p5.polar, a library and gamified tutorial for drawing patterns with polar coordinates by <a href="https://github.com/liz-peng">Liz Peng</a><br>
+        </summary>
+        <a href="https://github.com/liz-peng/p5.Polar">Code</a> /
+        <a href="https://liz-peng.github.io/p5.Polar/level/line.html">Playground</a> /
+        <a href="https://digital.wpi.edu/concern/etds/12579v81k?locale=en">Thesis</a><br>
+        <p>
+          p5.Polar is a JavaScript library that extends p5.js standard drawing functions with versions using polar coordinates. 
+          The library converts polar coordinate to cartesian coordinate, and abstracts the mathematics required for 
+          making many types of geometric patterns.
+        </p>
+        <img src="images/p5.polar.jpg" alt="The Tinsl environment running code processing a live webcam feed." />
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>
+          p5.post, a post-processsing effects library for p5.js by <a href="https://bandaloo.fun">Cole Granof</a><br>
+        </summary>
+        <a href="https://github.com/bandaloo/post5">Code</a> /
+        <a href="https://editor.p5js.org/bandaloo/sketches/zXMOZkuYU">Playground</a>
+        <p>
+          p5.post is a library for p5.js that enables you to apply interesting post-processing 
+          effects on your sketches using the power of WebGL2.
+        </p>
+        <img src="images/p5.post.jpg" alt="The Tinsl environment running code processing a live webcam feed." />
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>
+          marching.js, a JavaScript library for compiling ray marchers by <a href="https://charlie-roberts.com">Charlie Roberts</a><br>
+        </summary>
+        <a href="https://github.com/charlieroberts/marching">Code</a> /
+        <a href="https://charlieroberts.github.io/marching/playground/">Playground</a>
+        <p>
+          Marching.js is a JavaScript shader compiler specifically focused on ray marching via signed distance functions.
+          The goals of this project are:
+        </p>  
+        <ul class='bullet'>
+          <li>Expose beginning programmers to constructive solid geometry (CSG) concepts</li>
+          <li>Enable JS programmers to explore CSG without having to learn GLSL</li>
+          <li>Provide a terse API suitable for live coding performance</li>
+        </ul> 
+
+        <img src="images/marching.jpg" alt="A Julia fractal displaced by cellular noise, as rendered by marching.js" />
+
+      </details>
+    </li>
+  </ul>
+</body>
+
+</html>
+
