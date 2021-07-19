@@ -116,7 +116,7 @@
     <li>
       <details>
         <summary>
-          Barbara, an environment for authoring graphics programming langauges, by <a href="https://bandaloo.fun">Kit
+          Barbara, an environment for authoring graphics programming languages, by <a href="https://bandaloo.fun">Kit
             Zellerbach</a><br>
         </summary>
         <a href="http://github.com/kitzeller/barbara">Code</a> /
@@ -149,6 +149,30 @@
           and audiences. 
         </p>
         <img src="images/gibber_small.png" alt="The gibber editor with running annotations and visualizations" />
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>
+          Meng, a live coding environment and mini-language for VR, that priveleges speech and gestural control over typing. Created by 
+          <a href="https://github.com/cosmosssssss">Chunzhen Jiang</a>, 
+          <a href="https://vakarian15.github.io">Jian Liu</a>, and <a href="https://github.com/aceyan">Kai Yan</a>.<br>
+        </summary>
+        <a href="https://github.com/aceyan/Live-Coding-Virtual-Environment">Code</a> /
+        <a href="https://digital.wpi.edu/concern/etds/08612r804?locale=en">Masters Project Documentation</a>
+        <p>
+          Meng is a live coding environment authored in Unreal Engine 4 that enables users to create
+          and control agents in a virtual world. While many VR programming environments focus on using
+          "virtual keyboards" for programming, Meng eschews this in favor of a language that combines spoken
+          command with gestures, along with a graphic user interface providing instructions and additional
+          controls. The graphics in Meng are a relatively unique combination of traditional mesh geometries
+          combined with ray marched signed distance functions, enabling realtime constructive solid geometry,
+          morphing, and blending. The <a href="https://github.com/aceyan/UE4_RayMarchingPlugin">UE4 ray marching library</a>,
+          a <a href="https://github.com/aceyan/UE4_GPGPU_flocking">UE4 GPGPU flocking library</a>, 
+          and the <a href="https://github.com/Vakarian15/UE4-Google-Speech-to-Text-Plugin">UE4 speech recognition library</a>
+          used in this project were all authored by members of the REPL lab who worked on Meng.
+        </p>
+        <img src="images/Meng.jpg" alt="The Meng environment with a user controlling a swarm of agents." />
       </details>
     </li>
   </ul>
@@ -217,6 +241,19 @@
     <li>
       <details>
         <summary>
+          UE4 Google Speech-To-Text, a speech recognition plugin for Unreal Engine 4 by <a href="https://vakarian15.github.io">Jian Liu</a><br>
+        </summary>
+        <a href="https://github.com/Vakarian15/UE4-Google-Speech-to-Text-Plugin">Code</a>
+        <p>
+          This plugin provides blueprints nodes to use Google's speech-to-text service, enabling developers to easiy integrate
+          speech recognition into their Unreal projects.
+        </p>
+        <img src="images/gstt.png" alt="The Google Speech-to-Text plugin confiugred inside of an Unreal Blueprints program." />
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>
           p5.post, a post-processsing effects library for p5.js by <a href="https://bandaloo.fun">Cole Granof</a><br>
         </summary>
         <a href="https://github.com/bandaloo/post5">Code</a> /
@@ -247,6 +284,22 @@
 
         <img src="images/marching.jpg" alt="A Julia fractal displaced by cellular noise, as rendered by marching.js" />
 
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>
+          UE4 Raymarching Plugin, a raymarcher for Unreal Engine 4 by <a href="https://github.com/aceyan">Kai Yan</a><br>
+        </summary>
+        <a href="https://github.com/aceyan/UE4_RayMarchingPlugin">Code</a> / 
+        <a href="https://www.youtube.com/watch?v=WWwzQocgVwE">Demo Video</a>
+        <p>
+          This plugin provides performs ray marching on a provided mesh in Unreal, which has the advantage of using
+          Unreal's graphics engine to determine culling / z-testing while still enabling forms that would difficult
+          if not impossibe with traditional mesh-based rendering. The plugin also includes volumetric fog with shadows
+          and ambient occlusion, and basic constructive solid geometry boolean operations (union, difference, intersection, etc.)
+        </p>
+        <img src="images/ue4_raymarcher.jpg" alt="The raymarchig plugin smoothly blending a sphere and a box together" />
       </details>
     </li>
   </ul>
