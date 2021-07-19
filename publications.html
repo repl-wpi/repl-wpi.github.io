@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>repl</title>
+
+  <meta name="keywords" content="repl, programming, wpi, imgd, cs">
+	<meta name="author" content="charlie roberts">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News from the REPL (Realtime Expressive Programming Lab) at WPI.">
+
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+
+
+	<style>
+    /* adapted from minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+    html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}
+    h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+    ul{list-style:none}
+    button,input,select{margin:0}
+    html{box-sizing:border-box}
+    *,*::before,*::after{box-sizing:inherit}
+    img,video{height:auto;max-width:100%}
+
+    /* custom css, with inspiration / some code from nnnnnnnn.co */
+    body {
+      background-color:#222; 
+      max-width:30em; 
+      color:#ccc; 
+      font-family: 'Zilla Slab', monospace;
+      font-size: 1em;
+      margin:4em 4em 1em 4em;
+    }
+
+    code {
+      font-size: 1.6em; 
+      color:#999;
+    }
+
+    h1 {
+      font-weight:bold; 
+      font-size: 1em; 
+      margin-top:2em;
+      margin-bottom:.25em;
+      color:#fff;
+    }
+
+    h2 {
+      font-size:1em; 
+      color:white
+    }
+
+    h3 { 
+      margin-top:2em;
+      font-size: 1em;
+    }
+
+    hr {
+      margin-bottom:2em; 
+      clear: both; 
+      visibility: hidden;
+    }
+
+	  a {
+      color:#ccc;
+      text-decoration:underline;
+    }
+	  a:hover { color:#fff; }
+
+    header ul li {
+      display:inline-block;
+    }
+
+    ul p { margin-top:1em }
+
+    summary h3 { display: inline }
+
+    summary { margin-bottom:1em }
+
+    details { margin-bottom:1em }
+
+    .bullet { 
+      list-style:disc;
+      padding:1.25em;
+    }
+
+    .bullet li { margin-bottom: 1.5em; }
+
+    li { margin-bottom: 1em } 
+
+	</style>
+</head>
+
+<body>
+  <header>
+    <h1>Realtime Expressive Programming Lab</h1>
+    <ul>
+      <li><a href="./index.html">news</a></li>
+      <li><a href="./tools.html">tools</a></li>
+      <li><a href="./publications.html">publications</a></li>
+      <li><a href="./people.html">people</a></li>
+    </ul>
+  </header>
+
+  <hr />
+
+  <h2>Journal Publications</h2>
+
+  <hr />
+  <ul class="pubs">
+    <li> Roberts, C. . <a href="http://www.tandfonline.com/doi/full/10.1080/14794713.2016.1227602">Code as
+        Information and Code as Spectacle.</a> International Journal of Performance Arts and Digital Media. 12:2, pp.
+      201&ndash;206. 2016</li>
+    <li> Roberts, C. , Allison, J., Holmes, D., Taylor, B., Wright, M. <a
+        href="http://www.ingentaconnect.com/content/intellect/jmte/2016/00000009/00000001/art00007">Educational Design
+        of Live Coding Environments for the Browser</a>. Journal of Music, Education & Technology. 9:1, pp.95&ndash;116. 2016
+    </li>
+    <li> Roberts, C. , Wakefield, G., Wright, M. <a
+        href="http://www.mitpressjournals.org/doi/pdf/10.1162/COMJ_a_00283">Designing Musical Instruments for the
+        Browser</a>. Computer Music Journal. 39:1, pp.27&ndash;40. Spring 2015.</li>
+    <li>Kuchera-Morin, J., Wright, M., Wakefield, G.,  Roberts, C. , Höllerer, T., Adderton, D. <a
+        href="http://www.sciencedirect.com/science/article/pii/S0097849314000090?via%3Dihub">Immersive, Full-Surround,
+        Multi-User System Design</a>. Computers &amp; Graphics. Volume 40, May 2014</li>
+    <li>Wakefield, G., Höllerer, T., Kuchera-Morin, J.,  Roberts, C. , Wright, M. <a
+        href="http://doi.ieeecomputersociety.org/10.1109/MCG.2013.99">Spatial Interaction in a Multi-User Immersive
+        Instrument</a>. Computer Graphics &amp; Applications. Nov.-Dec. 2103, pages 14&ndash;20.</li>
+  </ul>
+
+  <hr />
+  <h2>Book Chapters</h2>
+  <hr />
+  <ul class='pubs'>
+    <li> Roberts, C.  and Wakefield, G. Tensions and Techniques in Live Coding Performance. In press in Dean, R.,
+      McLean, A. (eds.), Oxford Handbook of Algorithmic Music. Chapter 12. Oxford, UK : Oxford University Press, 2017
+    </li>
+    <li> Roberts, C. , Wakefield, G., and Wright.M. <a
+        href="https://link.springer.com/chapter/10.1007%2F978-3-319-47214-0_28">The Web Browser as Synthesizer and
+        Interface</a>. In Jensenius, A.R., and Lyons, M. (eds.), A NIME Reader: Fifteen Years of New Interfaces for
+        Musical Expression. Chapter 13, pp.433&ndash;450. Switzerland : Springer International Publishing, 2017</li>
+  </ul>
+
+  <hr />
+  <h2>Conference Proceedings (double-blind, peer-reviewed)</h2>
+  <hr />
+  <ul class='pubs'>
+    <li>Roberts, C. <a href='https://zenodo.org/record/3939244#.YPXIPy1h1B0'>Live
+      Coding Procedural Textures of Implicit Surfaces</a>. Proceedings of the 2020 International Live Coding Conference.</li>
+
+    <li>Roberts, C., Pachon-Puentes, M. <a
+      href='https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-49.pdf/eadc2fee-7584-373e-31e6-79828b0b196a?t=1575329719278'>
+      Bringing the TidalCycles Mini-Language to the Browser</a>. Proceedings of the 2019 Web Audio Conference. Five pages.</li>
+
+    <li>Roberts, C. <a href='https://iclc.toplap.org/2019/papers/paper141.pdf'>Live
+        Coding Ray Marchers with Marching.js</a>. Proceedings of the 2019 International Live Coding Conference.</li>
+
+    <li> Roberts, C.   <a href='https://charlieroberts.github.io/annotationsAndVisualizations/'>Realtime
+        Annotations&amp; Visualizations in Live Coding Performance</a>. Proceedings of the <a
+        href="https://2018.splashcon.org/track/live-2018-papers#About">2018 LIVE Programming Workshop</a>.</li>
+
+    <li> Roberts, C.   <a
+        href='https://webaudioconf.com/papers/metaprogramming-strategies-for-audioworklets.pdf'>Metaprogramming
+        Strategiesfor AudioWorklets</a>. Proceedings of the 2018 Web Audio Conference. Six pages.</li>
+
+    <li> Roberts, C.   <a href='http://eecs.qmul.ac.uk/~keno/72.pdf'>Strategies for Per-Sample Processing of Audio
+        Graphs in the Browser</a>. Proceedings of the 2017 Web Audio Conference. Six pages.  Best Presentation
+        Award </li>
+
+    <li> Roberts, C.  , Wakefield, G. <a
+        href='http://homes.create.aau.dk/dano/nime17/papers/0024/paper0024.pdf'>gibberwocky: New Live-Coding Instruments
+        for Musical Performance</a>. Proceedings of the 2017 New Interfaces for Musical Expression Conference, pp.
+      121&ndash;126.</li>
+
+    <li>Wakefield, G.,  Roberts, C.  <a href='http://homes.create.aau.dk/dano/nime17/papers/0052/paper0052.pdf'>A
+        Virtual Machine for Live Coding Language Design</a>. Proceedings of the 2017 New Interfaces for Musical
+      Expression
+      Conference, pp. 275&ndash;278.</li>
+
+    <li> Roberts, C. , Wakefield, G. <a href='http://www.charlie-roberts.com/pubs/Live_Coding_DAW.pdf'>Live
+        Coding
+        the Digital Audio Workstation</a>. Proceedings of the 2016 International Live Coding Conference.</li>
+
+    <li> Roberts, C. , Wright, M., Kuchera-Morin, J. <a
+        href='http://www.charlie-roberts.com/pubs/gibber_music_2015_ICMC.pdf'>Music Programming in Gibber</a>.
+      Proceedings
+      of the 2015 International Computer Music Conference, pages 50&ndash;57.</li>
+
+    <li> Roberts, C. , Yerkes, K., Bazo, D., Wright, M., Kuchera-Morin, J. <a
+        href='http://www.charlie-roberts.com/pubs/Sharing_Time_and_Code.pdf'>Sharing Time and Code in a Browser-Based
+        Live Coding Environment</a>. Proceedings of the 2015 International Conference on Live Coding, pp. 179&ndash;185.</li>
+
+    <li> Roberts, C. , Wright, M., Kuchera-Morin, J. <a
+        href='http://www.charlie-roberts.com/pubs/gibber.annotations.pdf'>Beyond Editing: Extended Interaction with
+        Textual Code Fragments</a>. Proceedings of the 2015 New Interfaces for Musical Expression Conference, pages
+      126&ndash;131.</li>
+
+    <li>Wan Rosli, H.M., Yerkes, K., Wood, T., Wolfe, H.,  Roberts,C. , Haron, A., Estrada, F. Wright, M.
+      Ensemble Feedback Instruments. In Press. Proceedings of the New Interfaces for Musical Expression Conference, pages
+      144&ndash;149.</li>
+
+    <li> Roberts, C. , Wright, M., Kuchera-Morin, J., Höllerer,T. <a
+        href='http://www.charlie-roberts.com/pubs/Gibber_ACMMM_2014.pdf'>Gibber: Abstractions for Creative Multimedia
+        Programming</a>. Proceedings of the 2014 ACM Multimedia Conference, pages 67&ndash;76.</li>
+
+    <li> Roberts, C. , Sound-Light Giblet. Proceedings of the 2014 ACM Multimedia Conference, pages
+      699&ndash;700.
+    </li>
+    <li> Roberts, C. , Wright, M., Kuchera-Morin, J., Höllerer,T. <a
+        href='http://www.charlie-roberts.com/pubs/Rapid_publication_nime_2014.pdf'>Rapid Creation and Publication of
+        Digital Musical
+        Instruments</a>. Proceedings of the New Interfaces for Musical Expression conference (NIME), pages 239-242.
+      London, 2014.</li>
+
+    <li>Wakefield, G.,  Roberts, C. , Wright, M., Wood, T., Yerkes, K. <a
+        href='http://www.charlie-roberts.com/pubs/collaborative-live-coding_nime_2014.pdf'>Collaborative Live-Coding
+        with
+        an Immersive Instrument</a>. Proceedings of the New Interfaces for Musical Expression conference (NIME), pages
+      505&ndash;508. London, 2014.</li>
+
+    <li> Roberts, C. , Wakefield, G., Wright, M. <a
+        href="http://www.mat.ucsb.edu/Publications/WebBrowser-as-Synth-Interface.pdf">The Web Browser as Synthesizer and
+        Interface</a>. In Proceedings of the New Interfaces for Musical Expression conference (NIME), pages
+      313&ndash;318. Korea Republic. 2013.  BEST PAPER AWARD .</li>
+
+    <li> Roberts, C. , Forbes, A., Höllerer, T. Enabling Multimodal Mobile Interfaces for Musical Performance.
+      Proceedings of the New Interfaces for Musical Expression conference (NIME). Four pages. Korea Republic. 2013.</li>
+
+    <li> Roberts, C. , Kuchera-Morin, J. <a
+        href="http://www.charlie-roberts.com/pubs/Gibber_charles_roberts_icmc_2012.pdf">Gibber: Live Coding Audio In The
+        Browser</a>. In Proceedings of the International Computer Music Conference (ICMC), pages 64&ndash;69. Ljubljana,
+      Slovenia. 2012.</li>
+
+    <li> Roberts, C. , Wakefield, G., Wright, M. <a
+        href="http://www.charlie-roberts.com/pubs/Mobile_Controls_On_The_Fly_charles_roberts_NIME_2012.pdf">Mobile
+        Controls On-The-Fly: An Abstraction for Distributed NIMEs</a>. In Proceedings of New Interfaces for Musical
+      Expression (NIME), pages 474&ndash;478. Ann Harbor, Michigan. 2012</li>
+
+    <li> Roberts, C. , Alper, B., Kuchera-Morin, J., and Höllerer, T.<a
+        href="http://www.charlie-roberts.com/pubs/Augmented_Text_charles_roberts_3dui_2012.pdf">Augmented Textual Data
+        Viewing in 3D Visualizations Using Tablets</a>. Proceedings of the 2012 Symposium on 3D User Interfaces (3DUI
+      2012), IEEE Virtual Reality Conference, pages 101&ndash;104</li>
+
+    <li> Roberts, C. , Höllerer, T. <a
+        href="http://www.charlie-roberts.com/pubs/Composition_For_Conductor_And_Audience_charles_roberts_UIST_2011.pdf">Composition
+        For Conductor And Audience: New Uses for Mobile Devices in the Concert Hall</a>. Proceedings of the User
+      Interface Software And Technology Conference (UIST), pages 65&ndash;66. Santa Barbara, CA. 2011</li>
+
+    <li> Roberts, C.  <a
+        href="http://www.charlie-roberts.com/pubs/Control_charles_roberts_icmc_2011.pdf">Control:
+        Software for End-User Interface Programming and Interactive Performance</a>. Proceedings of the International
+      Computer Music Conference (ICMC), 2011, pages 425&ndash;428.</li>
+
+    <li> Roberts, C. , Wright, M., Kuchera-Morin, J., Putnam, L. and Wakefield G. <a
+        href="http://www.mat.ucsb.edu/~wakefield/pubs/10_Roberts_NIME_DeviceServer.pdf">Dynamic Interactivity Inside the
+        AlloSphere</a>. Proceedings of the 2010 New Instruments for Musical Expression Conference (NIME), pages
+      57&ndash;62. 2010. </li>
+
+    <li>Wakefield, G., Smith, W. and  Roberts, C.  <a
+        href="http://www.mat.ucsb.edu/~wakefield/pubs/10_WakefieldSmithRoberts_LAC_Luaav.pdf">LuaAV: Extensibility and
+        Heterogeneity for Audiovisual Computing</a>. Proceedings of the Linux Audio Conference (LAC), 2010. Eight pages.
+    </li>
+
+    <li> Roberts, C.  Towards a Dynamic Framework for Interactivity MA Thesis, University of California Santa
+      Barbara, 2009.</li>
+
+    <li>J. Kuchera-Morin, T. Höllerer, B. Bell, S. Mangiat, L. Putnam, and  C. Roberts.  Towards a
+      General-purpose Infrastructure for Novel Collaborative Multimodal Human-Computer Interfaces. Proc. Workshop on Media Arts,
+      Science, and Technology (MAST), The Future of Interactive Media, Jan. 29–30, 2009, Santa Barbara, CA</li>
+  </ul>
+
+</body>
+
+</html>
