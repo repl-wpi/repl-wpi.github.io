@@ -7,7 +7,7 @@
   <meta name="keywords" content="repl, programming, wpi, imgd, cs">
 	<meta name="author" content="charlie roberts">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="News from the REPL (Realtime Expressive Programming Lab) at WPI.">
+  <meta name="description" content="Publilcations authored by members of the REPL (Realtime Expressive Programming Lab) at WPI.">
 
   <link rel="preload" href="https://fonts.gstatic.com/s/zillaslab/v6/dFa5ZfeM_74wlPZtksIFYpEY6HOpW3pwfa0.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -20,7 +20,7 @@
       src: url(https://fonts.gstatic.com/s/zillaslab/v6/dFa5ZfeM_74wlPZtksIFYpEY6HOpW3pwfa0.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
-    
+
     /* adapted from minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
     html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}
     h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
@@ -56,6 +56,10 @@
     h2 {
       font-size:1em; 
       color:white
+    }
+
+    h2::before {
+      content: ": : ";
     }
 
     h3 { 
