@@ -59,6 +59,15 @@ hr {
   visibility: hidden;
 }
 
+hr.main {
+  background-image: repeating-linear-gradient(0deg, #ff0, #ff0 4px, #f0f 4px, #f0f 8px, #0f0 8px, #0f0 12px); 
+  height:12px;
+  visibility:initial;
+  margin:1em 0em 2em 0em;
+  border:none;
+  max-width:45em;
+}
+
 a {
   color:#ccc;
   text-decoration:underline;
